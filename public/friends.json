@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Marcus Chen",
+    "picture": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=500&auto=format&fit=crop",
+    "email": "marcus.chen88@gmail.com",
+    "days_since_contact": 25,
+    "status": "overdue",
+    "tags": [
+      "college",
+      "tech"
+    ],
+    "bio": "Former lab partner from CS101. Expert in cloud infrastructure and an avid rock climber.",
+    "goal": 21,
+    "next_due_date": "2025-03-25"
+  },
+  {
+    "id": 2,
+    "name": "Sarah Jenkins",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=500&auto=format&fit=crop",
+    "email": "s.jenkins.design@outlook.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": [
+      "childhood",
+      "creative"
+    ],
+    "bio": "Grew up on the same street. Professional UI designer who loves visiting modern art galleries.",
+    "goal": 30,
+    "next_due_date": "2025-05-12"
+  },
+  {
+    "id": 3,
+    "name": "David Okoro",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=500&auto=format&fit=crop",
+    "email": "david.okoro.med@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": [
+      "gym",
+      "close friend"
+    ],
+    "bio": "Met at the local CrossFit box. He's a residency student who somehow finds time for marathons.",
+    "goal": 14,
+    "next_due_date": "2025-04-17"
+  },
+  {
+    "id": 4,
+    "name": "Elena Rodriguez",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=500&auto=format&fit=crop",
+    "email": "elena.rod92@yahoo.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": [
+      "travel",
+      "old friend"
+    ],
+    "bio": "Met during a backpacking trip in Peru. We share a passion for photography and spicy food.",
+    "goal": 30,
+    "next_due_date": "2025-03-01"
+  },
+  {
+    "id": 5,
+    "name": "Aria Kim",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=500&auto=format&fit=crop",
+    "email": "aria.kim.music@me.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": [
+      "hobby",
+      "music"
+    ],
+    "bio": "Plays cello in the community orchestra with me. Always has the best book recommendations.",
+    "goal": 14,
+    "next_due_date": "2025-04-24"
+  },
+  {
+    "id": 6,
+    "name": "Jordan Smith",
+    "picture": "https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=500&auto=format&fit=crop",
+    "email": "jordan.smith.contractor@gmail.com",
+    "days_since_contact": 60,
+    "status": "overdue",
+    "tags": [
+      "neighbor",
+      "sports"
+    ],
+    "bio": "Current neighbor. We usually watch the Sunday night football games and talk about home DIY projects.",
+    "goal": 30,
+    "next_due_date": "2025-02-14"
+  },
+  {
+    "id": 7,
+    "name": "Maya Patel",
+    "picture": "https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?q=80&w=500&auto=format&fit=crop",
+    "email": "maya.patel.law@gmail.com",
+    "days_since_contact": 6,
+    "status": "almost due",
+    "tags": [
+      "college",
+      "professional"
+    ],
+    "bio": "Law school classmate. Brilliant negotiator and a fan of vintage jazz records.",
+    "goal": 7,
+    "next_due_date": "2025-04-16"
+  },
+  {
+    "id": 8,
+    "name": "Leo Thompson",
+    "picture": "https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=500&auto=format&fit=crop",
+    "email": "leo.t.foodie@gmail.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": [
+      "close friend",
+      "foodie"
+    ],
+    "bio": "Best friend since high school. We have a goal to try every ramen shop in the city.",
+    "goal": 7,
+    "next_due_date": "2025-04-20"
+  },
+  {
+    "id": 9,
+    "name": "Chloe Dubois",
+    "picture": "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=500&auto=format&fit=crop",
+    "email": "chloe.dubois.art@protonmail.com",
+    "days_since_contact": 20,
+    "status": "on-track",
+    "tags": [
+      "abroad",
+      "artist"
+    ],
+    "bio": "Freelance illustrator based in Lyon. We keep in touch via monthly video calls to discuss art.",
+    "goal": 60,
+    "next_due_date": "2025-05-25"
+  },
+  {
+    "id": 10,
+    "name": "Samira Khan",
+    "picture": "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=500&auto=format&fit=crop",
+    "email": "samira.k.yoga@gmail.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": [
+      "yoga",
+      "wellness"
+    ],
+    "bio": "Met at a meditation retreat. She teaches vinyasa flow and has the most calming energy.",
+    "goal": 10,
+    "next_due_date": "2025-04-16"
+  }
+]

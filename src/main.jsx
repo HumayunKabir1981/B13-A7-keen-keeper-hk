@@ -8,25 +8,28 @@ import Timeline from './pages/Timeline/Timeline';
 import Stats from './pages/Stats/Stats';
 import Home from './components/Home/Home';
 import FriendDetail from './components/FriendDetail/FriendDetail';
+import TimelineProvider from './context/TimelineContext';
 
 
 const router = createBrowserRouter([
   {
     path: "/",
-    Component:Root,
-     children: [
-      { index: true,
-        loader: () => fetch("/friends.json"),
-        Component: Home },
+    Component: Root,
+    children: [
       {
-  path: "/:id",
-  loader: async ({ params }) => {
-    const res = await fetch('/friends.json');
-    const data = await res.json();
-   return data.find(f => f.id == params.id);
-  },
-  Component: FriendDetail
-},
+        index: true,
+        loader: () => fetch("/friends.json"),
+        Component: Home
+      },
+      {
+        path: "/:id",
+        loader: async ({ params }) => {
+          const res = await fetch('/friends.json');
+          const data = await res.json();
+          return data.find(f => f.id == params.id);
+        },
+        Component: FriendDetail
+      },
       { path: "timeline", Component: Timeline },
       { path: "stats", Component: Stats },
     ],
@@ -34,7 +37,11 @@ const router = createBrowserRouter([
 ]);
 
 createRoot(document.getElementById('root')).render(
+
   <StrictMode>
-    <RouterProvider router={router} />
+    <TimelineProvider>
+      <RouterProvider router={router} />
+    </TimelineProvider>
+
   </StrictMode>,
 )

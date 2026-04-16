@@ -10,8 +10,23 @@ const Friends = ({ friends }) => {
             <div>
               <h3 className='text-xl font-bold'>{friend.name}</h3>
               <p className='text-gray-500'>
-                {friend.days_since_contact} days
+                {friend.days_since_contact} days ago
               </p>
+              <p>
+                {friend.tags[0]}
+              </p>
+              <p
+  className={`px-3 py-1 rounded-full text-white text-sm w-fit ${
+    friend.status === "overdue"
+      ? "bg-red-500"
+      : friend.status === "almost due"
+      ? "bg-yellow-500"
+      : "bg-green-500"
+  }`}
+>
+  {friend.status}
+</p>
+
             </div>
           </div>
         </Link>

@@ -1,8 +1,7 @@
 # Name of my project: B13-A7-keen-keeper-hk
 
 # A short description:
-### Keen Keeper is a React-based relationship management and interaction tracking application.
-### It helps users keep track of friends, log interactions (Call, Text, Video), and visualize relationship activity through analytics and timeline features.
+### Keen Keeper is a React-based relationship management and interaction tracking application.It helps users keep track of friends, log interactions (Call, Text, Video), and visualize relationship activity through analytics and timeline features.
 
 
 #Technologies you used:

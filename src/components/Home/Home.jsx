@@ -11,12 +11,12 @@ const Home = () => {
   
     return (
         
-        <div>            
+        <div className='w-4/5 mx-auto'>            
 
-            <div>
+            <div className='mt-20'>
                 <div className='text-center flex flex-col justify-center items-center gap-5 my-10'>
                     <h1 className='text-6xl text-[#1f2937] font-bold'>Friends to keep close in your life</h1>
-                    <p>Your personal shelf of meaningful connections. Browse, tend, and nurture the
+                    <p>Your personal shelf of meaningful connections. Browse, tend, and nurture the <br/>
                      relationships that matter most.</p>
                     <button className='btn btn-neutral bg-[#244d3f] flex items-center  gap-2'> <IoMdAdd />Add a Friend</button>
                 </div>

@@ -9,10 +9,13 @@ import Stats from './pages/Stats/Stats';
 import Home from './components/Home/Home';
 import FriendDetail from './components/FriendDetail/FriendDetail';
 import TimelineProvider from './context/TimelineContext';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const router = createBrowserRouter([
   {
+    
     path: "/",
     Component: Root,
     children: [
@@ -41,6 +44,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <TimelineProvider>
       <RouterProvider router={router} />
+      <ToastContainer position="top-center" autoClose={2000} />
     </TimelineProvider>
 
   </StrictMode>,

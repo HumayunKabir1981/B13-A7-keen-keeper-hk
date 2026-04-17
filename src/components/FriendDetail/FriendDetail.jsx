@@ -10,6 +10,7 @@ import { RiNotificationSnoozeLine } from "react-icons/ri";
 import { GoArchive } from "react-icons/go";
 import { RiDeleteBin6Line } from "react-icons/ri";
 import { FaHistory } from "react-icons/fa";
+import { toast } from 'react-toastify';
 
 
 const FriendDetail = () => {
@@ -17,7 +18,7 @@ const FriendDetail = () => {
   const friend = useLoaderData();
 
   const { addToTimeline } = useContext(TimelineContext);
-  const navigate = useNavigate();
+
 
   const handleAction = (type, img) => {
     const newData = {
@@ -32,8 +33,12 @@ const FriendDetail = () => {
     };
 
     addToTimeline(newData);
+    toast.success(
+      <span>
+        {friend.name} - <span className="font-bold">{type}</span> added to timeline
+      </span>
+    );
 
-    navigate('/timeline');
   };
 
   return (

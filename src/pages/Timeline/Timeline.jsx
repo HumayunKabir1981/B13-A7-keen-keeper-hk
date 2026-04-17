@@ -18,7 +18,7 @@ const Timeline = () => {
                 onChange={(e) => setSearch(e.target.value)}
                 className="border p-2 mb-5 rounded-lg"
             >
-                <option value="">All</option>
+                <option value=""> Filter timeline </option>
                 <option value="call">Call</option>
                 <option value="text">Text</option>
                 <option value="video">Video</option>

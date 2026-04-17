@@ -42,9 +42,9 @@ const FriendDetail = () => {
   };
 
   return (
-    <div className=' w- w-4/5 mx-auto grid grid-cols-5 p-10 gap-10'>
+    <div className='w-full md:w-4/5 lg-w-4/5 mx-auto grid  grid-cols-1 lg:grid-cols-5 p-10 gap-10'>
 
-      <div className=' flex flex-col gap-5 col-span-2  '>
+      <div className=' flex flex-col gap-5 lg:col-span-2  '>
         <div className='shadow flex flex-col justify-center items-center text-center gap-3 p-10'>
           <img src={friend.picture} className='w-32 rounded-full' />
           <h1 className='text-3xl font-bold'>{friend.name}</h1>
@@ -66,19 +66,19 @@ const FriendDetail = () => {
         </div>
 
         <div >
-          <button className="px-16 flex w-full justify-center items-center gap-2 p-3 shadow rounded-lg">
+          <button className="px-16 flex w-full justify-center items-center gap-2 p-3 cursor-pointer shadow rounded-lg">
             <span><RiNotificationSnoozeLine /></span>
             <span>Snooze 2 weeks</span>
           </button>
         </div>
         <div >
-          <button className="px-16 flex w-full justify-center items-center gap-2 p-3 shadow rounded-lg">
+          <button className="px-16 flex w-full justify-center items-center gap-2 p-3 cursor-pointer  shadow rounded-lg">
             <span><GoArchive /></span>
             <span>Archive</span>
           </button>
         </div>
         <div >
-          <button className=" text-red-500 px-16 flex w-full justify-center items-center gap-2 p-3 shadow rounded-lg">
+          <button className=" text-red-500 px-16 flex w-full justify-center items-center gap-2 p-3 cursor-pointer  shadow rounded-lg">
             <span><RiDeleteBin6Line /></span>
             <span>Delete</span>
           </button>
@@ -90,9 +90,9 @@ const FriendDetail = () => {
 
       </div>
 
-      <div className='flex flex-col gap-10 col-span-3 p-5'>
+      <div className='flex flex-col gap-10 lg:col-span-3 p-5'>
 
-        <div className='flex justify-between gap-10 '>
+        <div className='flex flex-col md:flex-row justify-between gap-10 '>
           <div className='text-center flex flex-col gap-3 rounded-xl w-full shadow'>
             <h3 className='text-2xl text-[#244d3f]'>{friend.days_since_contact}</h3>
             <p className='text-xl text-[#64748B]'>Days since Contact</p>
@@ -107,7 +107,7 @@ const FriendDetail = () => {
           </div>
         </div>
 
-        <div className=' flex justify-between'>
+        <div className=' flex flex-col md:flex-row justify-between shadow'>
           <div>
             <h2 className='text-xl'>Relationship Goal</h2>
             <p>Connect every <span className='font-bold'>30 days</span> </p>
@@ -122,24 +122,24 @@ const FriendDetail = () => {
           <div>
             <h2 className='text-xl'>Quick Check-In</h2>
           </div>
-          <div className=' flex w-full gap-24'>
+          <div className=' flex flex-col md:flex-row w-full gap-24'>
             <div>
               <button onClick={() => handleAction("Call", callImg)}
-                className="px-16 flex flex-col items-center gap-2 p-3 shadow-xl  rounded-lg cursor-pointer">
+                className="px-16 flex flex-col items-center gap-2 p-3 shadow-sm  rounded-lg cursor-pointer">
                 <img src={callImg} />
                 <span>Call</span>
               </button>
             </div>
             <div>
               <button onClick={() => handleAction("Text", textImg)}
-                className="px-16 flex flex-col items-center gap-2 p-3 shadow-xl  rounded-lg cursor-pointer">
+                className="px-16 flex flex-col items-center gap-2 p-3 shadow-sm  rounded-lg cursor-pointer">
                 <img src={textImg} />
                 <span>Text</span>
               </button>
             </div>
             <div>
               <button onClick={() => handleAction("Video", videoImg)}
-                className="px-16 flex flex-col items-center gap-2 p-3 shadow-xl rounded-lg cursor-pointer">
+                className="px-16 flex flex-col items-center gap-2 p-3 shadow-sm rounded-lg cursor-pointer">
                 <img src={videoImg} />
                 <span>Video</span>
               </button>
@@ -149,7 +149,7 @@ const FriendDetail = () => {
         </div>
 
         <div className='flex flex-col gap-5'>
-          <div className='flex justify-between'>
+          <div className='flex flex-col md:flex-row justify-between'>
             <h2 className='text-2xl'>Recent Interactions</h2>
             <button className="px-16 flex  justify-center items-center gap-2 p-3 shadow rounded-lg">
               <span><FaHistory /></span>
@@ -160,7 +160,7 @@ const FriendDetail = () => {
 
           <div className='flex flex-col gap-5'>
 
-            <div className='flex gap-3 justify-between shadow'>
+            <div className='flex flex-col md:flex-row gap-3 justify-between shadow'>
               <div className='flex items-center gap-3'>
                 <div><img src={textImg} /></div>
                 <div>
@@ -171,7 +171,7 @@ const FriendDetail = () => {
               <div>Jan 28, 2026</div>
             </div>
 
-            <div className='flex gap-3 justify-between shadow'>
+            <div className='flex flex-col md:flex-row gap-3 justify-between shadow'>
               <div className='flex items-center gap-3'>
                 <div><img src={callImg} /></div>
                 <div>
@@ -182,7 +182,7 @@ const FriendDetail = () => {
               <div>Jan 28, 2026</div>
             </div>
 
-            <div className='flex gap-3 justify-between shadow'>
+            <div className='flex flex-col md:flex-row gap-3 justify-between shadow'>
               <div className='flex items-center gap-3'>
                 <div><img src={videoImg} /></div>
                 <div>
@@ -193,7 +193,7 @@ const FriendDetail = () => {
               <div>Jan 28, 2026</div>
             </div>
 
-            <div className='flex gap-3 justify-between shadow'>
+            <div className='flex flex-col md:flex-row gap-3 justify-between shadow'>
               <div className='flex items-center gap-3'>
                 <div><img src={textImg} /></div>
                 <div>

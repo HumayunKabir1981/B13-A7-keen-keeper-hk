@@ -2,7 +2,7 @@ import { Link } from 'react-router';
 
 const Friends = ({ friends }) => {
   return (
-    <div className='grid grid-cols-4 gap-10'>
+    <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10'>
       {friends.map(friend => (
         <Link to={`/${friend.id}`} key={friend.id}>
           <div className='flex flex-col items-center gap-2 p-4 shadow-xl hover:bg-gray-100 cursor-pointer'>

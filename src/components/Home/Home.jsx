@@ -20,7 +20,7 @@ const Home = () => {
                      relationships that matter most.</p>
                     <button className='btn btn-neutral bg-[#244d3f] flex items-center  gap-2'> <IoMdAdd />Add a Friend</button>
                 </div>
-                <div className='grid grid-cols-4 my-10'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 my-10'>
                     <div className='text-center flex flex-col gap-3'>
                         <h3 className='text-4xl text-[#244d3f]'>10</h3>
                         <p className='text-xl text-[#64748B]'>Total Friends</p>

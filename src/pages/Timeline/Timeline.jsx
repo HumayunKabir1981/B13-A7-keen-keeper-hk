@@ -24,7 +24,7 @@ const Timeline = () => {
 
     return (
         <div className="p-10">
-            <h2 className="text-2xl mb-5">Timeline</h2>
+            <h2 className="text-4xl font-bold text-[#1f2937] mb-5">Timeline</h2>
             <select
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}

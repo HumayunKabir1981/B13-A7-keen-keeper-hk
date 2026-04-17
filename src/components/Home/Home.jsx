@@ -42,8 +42,8 @@ const Home = () => {
 
             </div>
 
-           
-    <div>
+           <div><h2 className='text-2xl font-bold text-[#1f2937] mt-10 mb-5'>Your Friends</h2></div>
+    <div >
       <Friends friends={friends} />
     </div>
             

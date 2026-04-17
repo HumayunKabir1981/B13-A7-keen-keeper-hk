@@ -1,16 +1,19 @@
-# React + Vite
+# Name of my project: B13-A7-keen-keeper-hk
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# A short description:
+### Keen Keeper is a React-based relationship management and interaction tracking application.It helps users keep track of friends, log interactions (Call, Text, Video), and visualize relationship activity through analytics and timeline features.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Technologies used:
+## React.js
+## React Router
+## Context API
+## Tailwind CSS
+## Recharts
+## React Toastify
+## Vite
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 3 key features of your project:
+## 1. Friend Interaction Tracking:  Users can log interactions like Call, Text, and Video with friends and store them in a centralized timeline
+## 2. Dynamic Timeline System:  All interactions are displayed in a real-time timeline, with search and filter options for easy navigation.
+## 3. Analytics Dashboard: A pie chart-based stats page shows interaction distribution (Call vs Text vs Video) using Recharts.

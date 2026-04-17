@@ -18,7 +18,7 @@ const FriendDetail = () => {
   const friend = useLoaderData();
 
   const { addToTimeline } = useContext(TimelineContext);
-
+  
 
   const handleAction = (type, img) => {
     const newData = {
@@ -32,13 +32,13 @@ const FriendDetail = () => {
       img
     };
 
-    addToTimeline(newData);
+    addToTimeline(newData);    
     toast.success(
-      <span>
-        {friend.name} - <span className="font-bold">{type}</span> added to timeline
-      </span>
-    );
-
+  <span>
+     <span className="font-bold">{type}</span> with {friend.name} 
+  </span>
+);
+   
   };
 
   return (

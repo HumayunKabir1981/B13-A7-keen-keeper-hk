@@ -11,13 +11,15 @@ import FriendDetail from './components/FriendDetail/FriendDetail';
 import TimelineProvider from './context/TimelineContext';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NotFound from './components/NotFound/NotFound';
 
 
 const router = createBrowserRouter([
   {
-    
+
     path: "/",
     Component: Root,
+    errorElement: <NotFound />,
     children: [
       {
         index: true,
@@ -29,12 +31,19 @@ const router = createBrowserRouter([
         loader: async ({ params }) => {
           const res = await fetch('/friends.json');
           const data = await res.json();
-          return data.find(f => f.id == params.id);
+          const friend = data.find(f => f.id == params.id);
+
+          if (!friend) {
+            throw new Response("Not Found", { status: 404 }); // 🔥 important
+          }
+
+          return friend;
         },
         Component: FriendDetail
       },
       { path: "timeline", Component: Timeline },
       { path: "stats", Component: Stats },
+      { path: "*", Component: NotFound }
     ],
   },
 ]);

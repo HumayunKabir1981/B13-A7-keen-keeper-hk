@@ -4,7 +4,7 @@
 ### Keen Keeper is a React-based relationship management and interaction tracking application.It helps users keep track of friends, log interactions (Call, Text, Video), and visualize relationship activity through analytics and timeline features.
 
 
-#Technologies you used:
+# Technologies used:
 ## React.js
 ## React Router
 ## Context API
